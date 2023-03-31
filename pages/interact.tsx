@@ -67,16 +67,6 @@ const Interact = (props: ChainProps) => {
       return;
     }
 
-    if (qty < 1) {
-      setError(`Min 1 required.`);
-      return;
-    }
-
-    if (qty > Number(maxClaim)) {
-      setError(`Max ${maxClaim} allowed`);
-      return;
-    }
-
     setIsMinting(true);
     try {
       await mint([address, qty]);
