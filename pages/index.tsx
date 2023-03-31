@@ -1,15 +1,11 @@
-import type { NextPage } from "next";
 import Image from "next/image";
 import {
   ConnectWallet,
   useContract,
-  useUnclaimedNFTSupply,
-  useClaimedNFTSupply,
   useContractMetadata,
   useAddress,
   useNetwork,
   useNetworkMismatch,
-  useActiveClaimCondition,
   useContractRead,
   useContractWrite,
 } from "@thirdweb-dev/react";

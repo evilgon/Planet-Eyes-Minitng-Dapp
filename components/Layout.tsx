@@ -28,7 +28,16 @@ const Layout = ({ children }: Props) => {
                 router.asPath == "/" ? "font-bold text-white" : "text-slate-400"
               }`}
             >
-              <Link href="/">mint</Link>
+              <Link href="/">Mint</Link>
+            </li>
+            <li
+              className={`${
+                router.asPath == "/interact"
+                  ? "font-bold text-white"
+                  : "text-slate-400"
+              }`}
+            >
+              <Link href="/interact">Interact</Link>
             </li>
             <li
               className={`${
@@ -37,7 +46,7 @@ const Layout = ({ children }: Props) => {
                   : "text-slate-400"
               }`}
             >
-              <Link href="/about">about</Link>
+              <Link href="/about">About</Link>
             </li>
           </ul>
         </nav>
